@@ -106,8 +106,8 @@ const Map = () => {
           const distanceValue = parseFloat(distanceText); // Extract the distance in km
 
           // Check if the distance is less than 10 km
-          if (distanceValue < 10) {
-            setError('Price cannot be determined for distances less than 10 km.');
+          if (distanceValue < 100) {
+            setError('Price cannot be determined for distances less than 100 km.');
             setDistance(null);
             setTicketPrice(null);
             return;
